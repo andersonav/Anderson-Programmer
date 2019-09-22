@@ -2,10 +2,23 @@
 <html lang="pt-BR">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148340732-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-148340732-1');
+    </script>
+
     <!-- Metas -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="x-ua-compatible" content="IE=edge">
     <title>Anderson Developer</title>
     <meta name="description" content="EDEV - Engine Developers">
@@ -58,8 +71,8 @@
                 <ul class="nav navbar-nav navbar-right" id="one-page-nav">
                     <li><a href="#banner">Home</a></li>
                     <li><a href="#feature">Software</a></li>
-                    <li><a href="#screenshot">Portifolio</a></li>
-                    <li><a href="#support">Sobre Nós</a></li>
+                    <li><a href="#screenshot">Portifólio</a></li>
+                    <li><a href="#support">Sobre Mim</a></li>
                     <li><a href="#contact">Contato</a></li>
                 </ul>
             </div>
@@ -80,7 +93,7 @@
                                 <h1 class="banner-title">Seja inovador, ágil <br />e entre em contato!</h1>
                                 <p class="banner-text">Seu sonho faz parte do meu objetivo.</p>
                                 <div class="button-group">
-                                    <a class="btn btn-lg" href="#"><i class="fa fa-whatsapp"></i>Solicitar atendimento</a>
+                                    <a class="btn btn-lg" href="#contact">Solicitar atendimento</a>
                                 </div>
                             </div>
                         </div>
@@ -110,7 +123,7 @@
                                     <span class="icon-tools-2"></span>
                                 </div>
                                 <h4 class="intro-title">Hadware &amp; Software</h4>
-                                <p class="intro-content">Auxilio em toda a manutenção do seu computador, desde a estrutura lógica até a física, cuidando sempre da sua tecnologia.</p>
+                                <p class="intro-content">Auxilio na manutenção do seu computador, desde a estrutura lógica até a física, cuidando sempre da sua tecnologia.</p>
                             </div>
                         </div>
                         <div class="col-sm-4">
@@ -119,7 +132,7 @@
                                     <span class="icon-code"><i class="fa fa-code"></i></span>
                                 </div>
                                 <h4 class="intro-title">Desenvolvimento</h4>
-                                <p class="intro-content">Ajudarei a chegar em todos os seus objetivos, desenvolvendo de forma inovadora plataformas do tipo mobile e plataformas web. </p>
+                                <p class="intro-content">Ajudo a aumentar e inovar seu negócio, desenvolvendo de forma desafiadora plataformas do tipo mobile e web. </p>
                             </div>
                         </div>
                         <div class="col-sm-4">
@@ -128,7 +141,7 @@
                                     <span class="icon-chat"></span>
                                 </div>
                                 <h4 class="intro-title">Tutoria</h4>
-                                <p class="intro-content">Também realizo serviços de tutoria, dando suporte a pessoas que querem dar inicio na programação, por meio de dicas.</p>
+                                <p class="intro-content">Realizo serviços de tutoria, dando suporte a pessoas que querem dar inicio na programação, por meio de dicas, fases e acompanhamento.</p>
                             </div>
                         </div>
                     </div>
@@ -232,13 +245,12 @@
                                 <!--<img src="images/screenshot/tlini.png" alt="App Screenshot">-->
                                 <img src="{{asset('images/screenshot/barbearia.png')}}" alt="App Screenshot">
                                 <img src="{{asset('images/screenshot/barbearia2.png')}}" alt="App Screenshot">
-                                <img src="{{asset('images/screenshot/tlini.png')}}" alt="App Screenshot">
-                                <img src="{{asset('images/screenshot/clickbuy.png')}}" alt="App Screenshot">
-                                <img src="{{asset('images/screenshot/inicioclickbuy.png')}}" alt="App Screenshot">
-                                <img src="{{asset('images/screenshot/adminclickbuy.png')}}" alt="App Screenshot">
-                                <img src="{{asset('images/screenshot/modalclickbuy.png')}}" alt="App Screenshot">
+                                <img src="{{asset('images/screenshot/andersondev1.PNG')}}" alt="App Screenshot">
+                                <img src="{{asset('images/screenshot/annajessica1.PNG')}}" alt="App Screenshot">
+                                <img src="{{asset('images/screenshot/annajessica2.PNG')}}" alt="App Screenshot">
+                                <img src="{{asset('images/screenshot/annajessica3.PNG')}}" alt="App Screenshot">
+                                <img src="{{asset('images/screenshot/andersondev2.PNG')}}" alt="App Screenshot">
                                 <img src="{{asset('images/screenshot/radio2.jpeg')}}" alt="App Screenshot">
-
                                 <img src="{{asset('images/screenshot/radio1.jpeg')}}" alt="App Screenshot">
                                 <img src="{{asset('images/screenshot/radio3.jpeg')}}" alt="App Screenshot">
 
@@ -256,7 +268,7 @@
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3 col-xs-12">
                         <div class="section-header text-center">
-                            <h3 class="section-title">Sobre Nós</h3>
+                            <h3 class="section-title">Sobre Mim</h3>
                             <p class="section-subtext">Conheça nos mínimos detalhes</p>
                         </div>
                     </div>
@@ -264,112 +276,27 @@
                 <div class="row">
                     <div class="support-tabs">
                         <ul class="nav nav-tabs" role="tablist">
-                            <li role="presentation" class="active"><a href="#some-secret-02" aria-controls="some-secret-02" role="tab" data-toggle="tab"><span class="icon-target"></span>História</a></li>
-                            <li role="presentation"><a href="#some-secret-03" aria-controls="some-secret-03" role="tab" data-toggle="tab"><span class="icon-target"></span>Missão</a></li>
-                            <li role="presentation"><a href="#installation" aria-controls="installation" role="tab" data-toggle="tab"><span class="icon-clipboard"></span>Contrato</a></li>
-                            <!--<li role="presentation"><a href="#video-docs" aria-controls="video-docs" role="tab"-->
-                            <!--data-toggle="tab"><span class="icon-video"></span>Vídeo<br />Explanação</a></li>-->
-                            <li role="presentation"><a href="#general-faq" aria-controls="general-faq" role="tab" data-toggle="tab"><span class="icon-quote"></span>Dúvidas</a></li>
-                            <li role="presentation"><a href="#some-secret-01" aria-controls="some-secret-01" role="tab" data-toggle="tab"><span class="icon-hourglass"></span>Cronograma</a></li>
-
+                            <li role="presentation" class="active"><a href="#historia" aria-controls="historia" role="tab" data-toggle="tab"><span class="icon-book-open"></span>História</a></li>
+                            <li role="presentation"><a href="#missao" aria-controls="missao" role="tab" data-toggle="tab"><span class="icon-target"></span>Missão</a></li>
+                            <li role="presentation"><a href="#clientes" aria-controls="clientes" role="tab" data-toggle="tab"><span class="icon-profile-male"></span>Clientes</a></li>
+                            <li role="presentation"><a href="#contrato" aria-controls="contrato" role="tab" data-toggle="tab"><span class="icon-clipboard"></span>Contrato</a></li>
+                            <li role="presentation"><a href="#cronograma" aria-controls="cronograma" role="tab" data-toggle="tab"><span class="icon-hourglass"></span>Cronograma</a></li>
+                            <li role="presentation"><a href="#duvidas" aria-controls="duvidas" role="tab" data-toggle="tab"><span class="icon-quote"></span>Dúvidas</a></li>
                         </ul>
                         <div class="tab-content">
-                            <div role="tabpanel" class="tab-pane fade" id="installation">
+                            <div role="tabpanel" class="tab-pane fade in active" id="historia">
                                 <div class="pane-content">
                                     <div class="installation-steps">
-                                        <div class="installation-step">
-                                            <p class="step-title">1. Como funciona?</p>
-                                            <p class="step-content">É trabalhado mediante a necessidade apresentada
-                                                pelo cliente, não importa qual, se envolve logística, dinâmica e
-                                                computação, te ajudarei da melhor forma possível.</p>
-                                        </div>
-                                        <div class="installation-step">
-                                            <p class="step-title">2. Com funciona o CONTRATO?</p>
-                                            <p class="step-content">A organização é a base para um projeto de sucesso,
-                                                e os contratos refletem isso, tudo que for acordado, será
-                                                transcrito para o contrato, o mesmo irá ser separado por fases de
-                                                evolução e destacado inicio e fim de desenvolvimeto, sendo tudo
-                                                transparente e de forma organizada.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div role="tabpanel" class="tab-pane fade" id="video-docs">
-                                <div class="pane-content">
-                                    <div class="row">
-                                        <div class="col-sm-6 xs-bottom-30">
-                                            <div class="plyr-video">
-                                                <div data-type="youtube" data-video-id="xODCdqTWzRo"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="plyr-video">
-                                                <div data-type="youtube" data-video-id="u_ft2nVi6_g"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div role="tabpanel" class="tab-pane fade" id="general-faq">
-                                <div class="pane-content">
-                                    <div class="installation-steps">
-                                        <div class="installation-step">
-                                            <p class="step-title">1. Como solicitar orçamento?</p>
-                                            <p class="step-content">Muito simples, basta entrar em contato via email, informando sua necessidade. Logo que possivel entraremos em contato. </p>
-                                        </div>
-                                        <div class="installation-step">
-                                            <p class="step-title">2. Quais as formas de pagamento?</p>
-                                            <p class="step-content">Para efetuar seu pagamento, você terá disponível como opções: débito, crédito e dinheiro.
-                                            </p>
-                                        </div>
-                                        <div class="installation-step">
-                                            <p class="step-title">3. Como funciona o serviço de hospedagem?</p>
-                                            <p class="step-content">Não é fornecido hospedagem para sistemas de terceiros, somente para sistemas produzidos pelo mesmo.</p>
-                                        </div>
-                                        <div class="installation-step">
-                                            <p class="step-title">4. Vocês trabalham com desenvolvimento desktop?</p>
-                                            <p class="step-content">Sim, trabalhamos com todo tipo de desenvolvimento de sistemas.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div role="tabpanel" class="tab-pane fade" id="some-secret-01">
-                                <div class="pane-content">
-                                    <div class="installation-steps">
-                                        <div class="installation-step">
-                                            <p class="step-title">1. Vamos entender mais sobre isso?</p>
-                                            <p class="step-content">Organizar as atividades, garantir que elas sejam executadas
-                                                dentro dos prazos estipulados, distribuí-las entre os responsáveis,
-                                                são todas coisas bem importantes para planejar qualquer projeto. Por isso a EDEV tem um cronograma planejado de todos os projetos, serviços, além de proporcionar confiança para os clientes.</p>
-                                        </div>
-                                        <div class="installation-step">
-                                            <p class="step-title">2. Em que um planejamento pode ser importante?</p>
-                                            <p class="step-content">Dentro da gestão de projetos, cronograma é um conceito-chave. Ele é um dos principais responsáveis por não deixar que alguns problemas apareçam,
-                                                como: mudança do escopo, falta de comunicação e atrasos nas entregas. Afinal, um projeto tem início, meio e fim e
-                                                para determinar o que acontecerá em cada etapa é preciso de um planejamento.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div role="tabpanel" class="tab-pane fade in active" id="some-secret-02">
-                                <div class="pane-content">
-                                    <div class="installation-steps">
-                                        <div class="installation-step">
+                                        <div class="installation-step full">
                                             <p class="step-title">1. História</p>
-                                            <p class="step-content">Sou um desenvolvedor Full Stack com mais de 5 anos de experiência, com espírito de liderança, comprometimento, confiabilidade
-                                                 e há a necessidade de soluções melhores e inovadores para negócios. Tendo em vista a organização, um melhor atendimento e tecnologias de ponta para o desenvolvimento
-                                                de sistemas. </p>
+                                            <p class="step-content">Sou desenvolvedor Full Stack com mais de 5 anos de experiência, com espírito de liderança, comprometimento, confiabilidade
+                                                e há a necessidade de soluções melhores e inovadores para negócios. Tendo em vista a organização, um melhor atendimento e tecnologias de ponta para o desenvolvimento
+                                                de sistemas e aplicativos. </p>
                                         </div>
-                                        <!-- <div class="installation-step">
-                                            <p class="step-title">2. Filosofia</p>
-                                            <p class="step-content">A nossa filosofia é criar o tipo de site que a
-                                                maioria das empresas querem: fácil de encontrar, elegante e atraente,
-                                                carregamento rápido, móvel ágil e fácil de comprar.</p>
-                                        </div> -->
                                     </div>
                                 </div>
                             </div>
-                            <div role="tabpanel" class="tab-pane fade" id="some-secret-03">
+                            <div role="tabpanel" class="tab-pane fade" id="missao">
                                 <div class="pane-content">
                                     <div class="installation-steps">
                                         <div class="installation-step">
@@ -381,8 +308,79 @@
                                         <div class="installation-step">
                                             <p class="step-title">2. O que é preciso para iniciar um trabalho?</p>
                                             <p class="step-content">Primeiro vontade de obter sucesso, tudo será feito
-                                                da melhor maneira possível, porque estamos aqui para ajudá-lo a
+                                                da melhor maneira possível, porque estou aqui para ajudá-lo a
                                                 tornar-se grande, serei um companheiro para o sucesso.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="clientes">
+                                <div class="pane-content">
+                                    <div class="installation-steps">
+                                        <div class="installation-step full">
+                                            <p class="step-title">1. IFCE Maracanaú</p>
+                                            <p class="step-content">"E quando os estudantes criam soluções para os próprios problemas? É com essa filosofia que a Coordenação de Tecnologia da Informação do @ifcemaracanauoficial vem desafiando bolsistas a desenvolverem soluções para automatizar rotinas administrativas da unidade. Já foram desenvolvidas sete soluções entre aplicativos e sistemas.
+                                                Entre as mais recentes soluções está a reativação da ouvidoria do campus, por meio de um sistema desenvolvido pelo aluno do curso de Ciência da Computação, Anderson Alves."</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="contrato">
+                                <div class="pane-content">
+                                    <div class="installation-steps">
+                                        <div class="installation-step full">
+                                            <p class="step-title">1. Como funciona?</p>
+                                            <p class="step-content">É trabalhado mediante a necessidade apresentada
+                                                pelo cliente, não importa qual, se envolve logística, dinâmica e
+                                                computação, te ajudarei da melhor forma possível. A organização é a base para um projeto de sucesso,
+                                                e os contratos refletem isso, tudo que for acordado, será
+                                                transcrito para o contrato, o mesmo irá ser separado por fases de
+                                                evolução e destacado inicio e fim de desenvolvimeto, sendo tudo
+                                                transparente e de forma organizada.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div role="tabpanel" class="tab-pane fade" id="cronograma">
+                                <div class="pane-content">
+                                    <div class="installation-steps">
+                                        <div class="installation-step">
+                                            <p class="step-title">1. Vamos entender mais sobre isso?</p>
+                                            <p class="step-content">Organizar as atividades, garantir que elas sejam executadas
+                                                dentro dos prazos estipulados, distribuí-las entre os responsáveis,
+                                                são todas coisas bem importantes para planejar qualquer projeto. Por isso é importante ter um cronograma planejado de todos os projetos, serviços, além de proporcionar confiança para os clientes.</p>
+                                        </div>
+                                        <div class="installation-step">
+                                            <p class="step-title">2. Em que um planejamento pode ser importante?</p>
+                                            <p class="step-content">Dentro da gestão de projetos, cronograma é um conceito-chave. Ele é um dos principais responsáveis por não deixar que alguns problemas apareçam,
+                                                como: mudança do escopo, falta de comunicação e atrasos nas entregas. Afinal, um projeto tem início, meio e fim e
+                                                para determinar o que acontecerá em cada etapa é preciso de um planejamento.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div role="tabpanel" class="tab-pane fade" id="duvidas">
+                                <div class="pane-content">
+                                    <div class="installation-steps">
+                                        <div class="installation-step">
+                                            <p class="step-title">1. Como solicitar orçamento?</p>
+                                            <p class="step-content">Muito simples, basta entrar em contato via email, informando sua necessidade. Logo que possivel entrarei em contato. </p>
+                                        </div>
+                                        <div class="installation-step">
+                                            <p class="step-title">2. Quais as formas de pagamento?</p>
+                                            <p class="step-content">Para efetuar seu pagamento, você terá disponível como opções: débito, crédito e dinheiro.
+                                            </p>
+                                        </div>
+                                        <div class="installation-step">
+                                            <p class="step-title">3. Como funciona o serviço de hospedagem?</p>
+                                            <p class="step-content">Serviço de hospedagem é incluso no pacote com o orçamento do projeto. Além de ter a possibilidade de hospedagem para sistemas de terceiros.</p>
+                                        </div>
+                                        <div class="installation-step">
+                                            <p class="step-title">4. Vale a pena trabalhar com você?</p>
+                                            <p class="step-content">Sim, além do bom atendimento, presto um ótimo serviço usando tecnologias atuais que darão uma visualização melhor para seu negócio.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -394,26 +392,6 @@
             </div>
         </div>
 
-
-        <!-- Features In -->
-        <div class="section section-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3 col-xs-12">
-                        <div class="section-header text-center style-2">
-                            <h3 class="section-title">Referências</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <a class="client-logo" href="#"><img src="{{asset('images/client/logo-1.png')}}" alt="Client Logo"></a>
-                    <a class="client-logo" href="#"><img src="{{asset('images/client/logo-2.png')}}" alt="Client Logo"></a>
-                    <a class="client-logo" href="#"><img src="{{asset('images/client/logo-3.png')}}" alt="Client Logo"></a>
-                    <a class="client-logo" href="#"><img src="{{asset('images/client/logo-4.png')}}" alt="Client Logo"></a>
-                    <a class="client-logo" href="#"><img src="{{asset('images/client/logo-5.png')}}" alt="Client Logo"></a></div>
-            </div>
-        </div>
-        <!-- Features In End -->
 
         <!-- Contact area -->
         <div id="contact" class="section contact-area">
@@ -429,10 +407,10 @@
             <div class="form-wrap text-white">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-5 col-xs-12">
+                        <div class="col-md-6 col-xs-12">
                             <div class="section-header style-2">
                                 <h3 class="section-title">Contato</h3>
-                                <p class="section-subtext">Entre em contato conosco e mude o rumo da sua história.</p>
+                                <p class="section-subtext">Entre em contato comigo e mude o rumo da sua história.</p>
                             </div>
                             <form id="contactForm" class="contact-form" action="#" method="post">
                                 <p>
@@ -461,36 +439,14 @@
     </div>
 
     <footer>
-
-        <!-- Footer Subscribe -->
-        <!-- <div class="subscription-area section-padding theme-bg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h3 class="wow fadeInLeft" data-wow-duration="1.5s">Subscribe to the<br/>newsletter</h3>
-                        </div>
-                        <div class="col-md-6">
-                            <form class="subscription wow fadeInRight" data-wow-duration="1.5s" action="#" method="post">
-                                <input type="email" name="email" placeholder="Enter your mail here" required>
-                                <button type="submit">Submit</button>
-                                <p class="newsletter-success"></p>
-                                <p class="newsletter-error"></p>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-        <!-- Footer Subscribe -->
-
-        <!-- Footer logo and social media button -->
         <div class="logo-social-area section-padding">
             <div class="container text-center">
                 <a class="logo logo-footer wow fadeInDown" data-wow-duration="1.5s" href="#">
-                    <img src="{{asset('images/logo2.png')}}" alt="Site Logo">
+                    <img src="{{asset('images/logo2.png')}}" alt="Site Logo" id="imgFooter">
                 </a>
                 <div class="socials wow fadeInUp" data-wow-duration="1.5s">
-                    <a href="https://www.facebook.com/enginedevelopers/" target="_blank"><i class="fa fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/edevoficial/?hl=pt-br" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5585988355751" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/andersondeveloper/?hl=pt-br" target="_blank"><i class="fa fa-instagram"></i></a>
                 </div>
             </div>
         </div>
@@ -502,13 +458,6 @@
                 <div class="row">
                     <div class="col-md-6 col-xs-12">
                         <p class="copyright">Copyright 2019, <a href="#">Anderson Developer</a>. Todos os direitos reservados</p>
-                        <!-- </div>
-                            <div class="col-md-6 col-xs-12">
-                                <ul class="footer-nav">
-                                    <li><a href="#">Termos &amp; Codições</a></li>
-                                    <li><a href="#">FAQ</a></li>
-                                </ul>
-                            </div> -->
                     </div>
                 </div>
             </div>

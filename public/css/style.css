@@ -807,6 +807,7 @@ Screenshot Styles
 .screenshot-carousel .owl-item img {
   width: calc(100% - 40px);
   margin: 0 20px;
+  height: 350px;
   -webkit-box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.09);
           box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.09);
 }
@@ -951,6 +952,14 @@ Support Styles
 }
 .support-tabs .installation-step {
   width: 50%;
+  display: inline-block;
+  float: left;
+  padding-right: 15px;
+  margin-bottom: 45px;
+}
+
+.support-tabs .installation-step.full {
+  width: 100%;
   display: inline-block;
   float: left;
   padding-right: 15px;
