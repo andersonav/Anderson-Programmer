@@ -21,7 +21,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="x-ua-compatible" content="IE=edge">
     <title>Anderson Developer</title>
-    <meta name="description" content="EDEV - Engine Developers">
+    <meta name="description" content="Anderson Alves - Developer">
     <!-- External CSS -->
     <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/font-awesome.min.css')}}">
@@ -61,7 +61,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="{{route('index')}}">
                     <img src="images/logo3.png" class="imagemLogo" alt="Site Logo">
                 </a>
             </div>
@@ -73,7 +73,7 @@
                     <li><a href="#feature">Software</a></li>
                     <li><a href="#screenshot">Portifólio</a></li>
                     <li><a href="#support">Sobre Mim</a></li>
-                    <li><a href="#contact">Contato</a></li>
+                    <li><a href="#contact" id="aContact">Contato</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -93,7 +93,7 @@
                                 <h1 class="banner-title">Seja inovador, ágil <br />e entre em contato!</h1>
                                 <p class="banner-text">Seu sonho faz parte do meu objetivo.</p>
                                 <div class="button-group">
-                                    <a class="btn btn-lg" href="#contact">Solicitar atendimento</a>
+                                    <a class="btn btn-lg" href="javascript:void(0)" id="solicitarAtendimento">Solicitar atendimento já</a>
                                 </div>
                             </div>
                         </div>
@@ -412,23 +412,25 @@
                                 <h3 class="section-title">Contato</h3>
                                 <p class="section-subtext">Entre em contato comigo e mude o rumo da sua história.</p>
                             </div>
-                            <form id="contactForm" class="contact-form" action="#" method="post">
+                            <form id="contactForm" class="contact-form" action="{{route('send-mail')}}" method="post">
+
+                                <input type="hidden" value="{{csrf_token()}}" name="_token">
                                 <p>
-                                    <input id="name" type="text" name="name" placeholder="Nome" required>
+                                    <input id="name" type="text" name="name" placeholder="Seu nome" required>
                                 </p>
                                 <p>
-                                    <input id="email" type="email" name="email" placeholder="E-mail" required>
+                                    <input id="phone" type="text" name="phone" placeholder="Seu telefone" required>
                                 </p>
                                 <p>
-                                    <input id="subject" type="text" name="subject" placeholder="Título" required>
+                                    <input id="email" type="email" name="email" placeholder="Seu e-mail" required>
                                 </p>
                                 <p>
-                                    <textarea id="message" name="message" placeholder="Sua Mensagem" rows="5" required></textarea>
+                                    <input id="subject" type="text" name="subject" placeholder="Título da proposta" required>
                                 </p>
-                                <button type="button" class="btn btn-lg btnEnviarEmail"><i class="fa fa-paper-plane"></i> Enviar</button>
-                                <p class="input-success">Mensagem enviada com sucesso!</p>
-                                <p class="input-error">Desculpe, ocorreu uma falha ao enviar a mensagem, tente
-                                    novamente mais tarde!</p>
+                                <p>
+                                    <textarea id="message" name="message" placeholder="Faça brevemente uma descrição da sua proposta" rows="5" required></textarea>
+                                </p>
+                                <button type="submit" class="btn btn-lg btnEnviarEmail"><i class="fa fa-paper-plane"></i> Enviar</button>
                             </form>
                         </div>
                     </div>
@@ -462,7 +464,11 @@
                 </div>
             </div>
             <!-- Footer copyrgiht and navigation -->
+            <div class="whatsapp">
+                <a href="https://api.whatsapp.com/send?phone=5585988355751" target="_blank"><img class="whatsapp" src="https://logospng.org/download/whatsapp/logo-whatsapp-verde-icone-ios-android-1024.png" /></a>
+            </div>
     </footer>
+
 
     <!-- Script -->
     <script src="{{asset('assets/js/jquery.min.js')}}"></script>
@@ -475,11 +481,9 @@
     <script src="{{asset('assets/js/plyr.js')}}"></script>
     <script src="{{asset('assets/js/jquery.ajaxchimp.min.js')}}"></script>
     <script src="{{asset('assets/js/jquery.stellar.min.js')}}"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmiJjq5DIg_K9fv6RE72OY__p9jz0YTMI"></script>
-    <script src="{{asset('js/map.js')}}"></script>
+    <script src="{{asset('js/sweetalert2.js')}}"></script>
     <script src="{{asset('js/custom.js')}}"></script>
     <script src="{{asset('js/sendMail.js')}}"></script>
-    <script src="{{asset('js/sweetalert2.all.min.js')}}"></script>
 </body>
 
 </html>

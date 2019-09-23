@@ -32,6 +32,14 @@ Blog Pages
 /*------------------------
 Preloader Styles
 ------------------------*/
+.whatsapp {
+  position: fixed;
+  top: 82%;
+  right: 1%;
+  padding: 10px;
+  z-index: 10000000;
+  width: 80px;
+}
 .imagemLogo{
   margin-top: -18px;
   width: 50%;

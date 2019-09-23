@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     return view('index');
-});
+})->name('index');
 
 
-Route::post('/sendEmail', 'SendEmail@actionSendEmail')->name('rotaEnviarEmail');
+Route::post('/send-mail', 'SendEmail@actionSendEmail')->name('send-mail');

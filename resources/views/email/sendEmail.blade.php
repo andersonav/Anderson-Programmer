@@ -192,7 +192,7 @@
 													href="https://beefree.io" tabindex="-1" target="_blank"> <img
 														align="center" alt="Image" border="0"
 														class="center autowidth fullwidth"
-														src="{{asset('images/logoEmail.jpg')}"
+														src="http://www.demacode.com.br/wp-content/uploads/2019/02/omnichannel-1.png"
 														style="text-decoration: none; -ms-interpolation-mode: bicubic; height: auto; border: none; width: 100%; max-width: 480px; display: block;"
 														title="Image" width="480" /></a>
 												<!--[if mso]></td></tr></table><![endif]-->
