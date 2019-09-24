@@ -25,7 +25,7 @@
         <div class="collapse navbar-collapse" id="navbar-collapse">
             <ul class="nav navbar-nav navbar-right" id="one-page-nav">
                 <li><a href="{{URL::previous()}}">Voltar</a></li>
-                <li class="active"><a href="#banner">Contato</a></li>
+                <li class="active"><a href="#banner">405</a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -40,17 +40,15 @@
         <div class="banner-content">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-md-12">
                         <div class="banner-text-content">
-                            <h1 class="banner-title">Obrigado!</h1>
-                            <p class="banner-text"> Muito obrigado por entrar em contato. Isso significa muito para mim, assim como você! Aprecio pelo tempo que tens disponível para nos comunicar. Obrigado por ser você.
-                                Te enviei um email para mais informações, e brevemente entrarei em contato.</p>
+                            <h1 class="banner-title">Ops 405!</h1>
+                            <p class="banner-text"> Método não é permitido! É necessário a submissão de um formulário ou de uma requisição!</p>
                         </div>
                     </div>
                     <div class="col-md-5 hidden-sm hidden-xs">
                         <div class="mock right-style">
-                            <img class="front-mock wow fadeInUp" data-wow-duration="1.5s" src="https://www.stickpng.com/assets/images/5aa78e207603fc558cffbf19.png" alt="mock front" style="width: 75% !important;">
-
+                            <!-- <img class="front-mock wow fadeInUp" data-wow-duration="1.5s" src="https://cdn.shopify.com/s/files/1/0322/6897/files/404-permalink.png?432866230176278629" alt="mock front" style="width: 75% !important;"> -->
                         </div>
                     </div>
                 </div>
