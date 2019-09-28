@@ -27,6 +27,14 @@ class SendEmail extends Controller
 
         $this->actionSendSMS($request);
 
+        $insert = Cliente::create([
+            'nome' => $request->name,
+            'telefone' => $request->phone,
+            'email' => $request->email,
+            'titulo' => $request->subject,
+            'mensagem' => $request->message
+        ]);
+
         return view('pageContact');
     }
 

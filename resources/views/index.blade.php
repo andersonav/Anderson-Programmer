@@ -367,46 +367,48 @@
                             <h3 class="section-title">Contato</h3>
                             <p class="section-subtext">Entre em contato comigo e mude o rumo da sua história.</p>
                         </div>
-                        <form id="contactForm" class="contact-form" action="{{route('send-mail')}}" method="post">
-                            @if ($errors->has('name'))
-                            <span class="help-block">
-                                <strong>{{ $errors->first('name') }}</strong>
-                            </span>
-                            @endif
+                        <form id="contactForm" class="contact-form" action="{{route('send-mail')}}" method="post" style="margin-top: -10% !important;">
+
                             <input type="hidden" value="{{csrf_token()}}" name="_token">
                             <p>
+                                @if ($errors->has('name'))
+                                <span class="help-block">
+                                    <strong>{{ $errors->first('name') }}</strong>
+                                </span>
+                                @endif
                                 <input id="name" type="text" name="name" placeholder="Seu nome">
                             </p>
-                            @if($errors->has('phone'))
-                            <span class="help-block">
-                                <strong>{{ $errors->first('phone') }}</strong>
-                            </span>
-                            @endif
+
                             <p>
+                                @if($errors->has('phone'))
+                                <span class="help-block">
+                                    <strong>{{ $errors->first('phone') }}</strong>
+                                </span>
+                                @endif
                                 <input id="phone" type="text" name="phone" placeholder="Seu telefone">
                             </p>
-                            @if($errors->has('email'))
-                            <span class="help-block">
-                                <strong>{{ $errors->first('email') }}</strong>
-                            </span>
-                            @endif
                             <p>
+                                @if($errors->has('email'))
+                                <span class="help-block">
+                                    <strong>{{ $errors->first('email') }}</strong>
+                                </span>
+                                @endif
                                 <input id="email" type="email" name="email" placeholder="Seu e-mail">
                             </p>
-                            @if($errors->has('subject'))
-                            <span class="help-block">
-                                <strong>{{ $errors->first('subject') }}</strong>
-                            </span>
-                            @endif
                             <p>
+                                @if($errors->has('subject'))
+                                <span class="help-block">
+                                    <strong>{{ $errors->first('subject') }}</strong>
+                                </span>
+                                @endif
                                 <input id="subject" type="text" name="subject" placeholder="Título da proposta">
                             </p>
-                            @if($errors->has('message'))
-                            <span class="help-block">
-                                <strong>{{ $errors->first('message') }}</strong>
-                            </span>
-                            @endif
                             <p>
+                                @if($errors->has('message'))
+                                <span class="help-block">
+                                    <strong>{{ $errors->first('message') }}</strong>
+                                </span>
+                                @endif
                                 <textarea id="message" name="message" placeholder="Faça brevemente uma descrição da sua proposta" rows="5"></textarea>
                             </p>
                             <button type="submit" class="btn btn-lg btnEnviarEmail"><i class="fa fa-paper-plane"></i> Enviar</button>
